@@ -1,0 +1,82 @@
+
+<html>
+    <head>
+        <title>Login-Form</title>
+        <style type="text/css">
+            div{
+                background-color: yellow;
+                margin-top:10em;
+                border:3px solid rgb(7, 180, 248);
+                border-radius:45px;
+                margin-left:100px;
+                margin-right:100px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                
+            }
+            input[type="submit"]{
+                border-radius: 90px;
+                width:100px;
+                height: 30px;
+            }
+           
+        </style>
+    </head>
+<body bgcolor="pink">
+    <button style="margin-left:0px" onclick="f1()">theme1</button>
+    <button style="margin-left:0px" onclick="f2()">theme2</button>
+    <div id="change">
+    <form>
+        <label><h1>Log In</h1></label>
+        <table align="center">
+            <tr><td>
+        User name:</td><td><input type="text" name="user" required></td>
+        </tr>
+    
+        <tr><td>Password:</td><td><input type="password" name="pass" required></td></tr>
+        
+        </table>
+       
+        <input type="submit" id="sub" name="sub" style="margin-top:10px;background-color:blue;color:white;border:1px solid blue ">
+
+</form>
+</div>
+
+<script>
+    function f1(){
+        window.parent.frames["login"].document.body.style.backgroundColor="rgba(232, 33, 192, 0.563)";
+        window.parent.frames["registration"].document.body.style.backgroundColor="rgba(232, 33, 192, 0.563)";
+        window.parent.frames["profile"].document.body.style.backgroundColor="rgba(232, 33, 192, 0.563)";
+        window.parent.frames["details"].document.body.style.backgroundColor="lightcoral";
+        document.getElementById('change').style.color="yellow";
+        document.getElementById('change').style.fontFamily="'Courier New', Courier, monospace";
+        document.querySelector('table').style.color="yellow";
+        document.getElementById('sub').style.backgroundColor="yellow";
+        document.getElementById('sub').style.color="black";
+        document.querySelector('div').style.backgroundImage="url('loginimg1.png')"
+        document.getElementById('change').style.borderColor="yellow";
+        document.body.style.backgroundColor="lightpink";
+ 
+    }
+    window.onload=f1();
+
+
+    function f2(){
+        window.parent.frames["login"].document.body.style.backgroundColor="rgba(10, 8, 8, 0.363)";
+        window.parent.frames["registration"].document.body.style.backgroundColor="rgba(10, 8, 8, 0.363)";
+        window.parent.frames["profile"].document.body.style.backgroundColor="rgba(10, 8, 8, 0.363)";
+        window.parent.frames["details"].document.body.style.backgroundColor="rgba(10, 8, 8, 0.663)";
+        document.getElementById('change').style.color="red";
+        document.getElementById('change').style.fontFamily="cursive";
+        document.querySelector('table').style.color="rgb(7,180,245)";
+        document.getElementById('sub').style.backgroundColor="blue";
+        document.getElementById('sub').style.color="white";
+        document.querySelector('div').style.backgroundImage="url('loginimg2.jpg')";
+        document.getElementById('change').style.borderColor="yellow";
+        document.body.style.backgroundColor="rgba(11, 6, 6, 0.912)";
+ 
+    }
+</script>
+</body>
+</html>

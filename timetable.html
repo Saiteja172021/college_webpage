@@ -1,0 +1,209 @@
+<html>
+    <head>
+        <style type="text/css">
+            th{
+                text-align: center;
+            }
+            td{
+                text-align: center;
+            }
+            .a{
+                background-color: red;
+            }
+            .b{
+                text-align: left;
+            }
+            .c{
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body bgcolor="pink">
+        <button onclick="f6()">theme1</button>
+        <button onclick="f7()">theme2</button>
+        <button onclick="f8()">theme2</button>
+        <br><br><br><br>
+        <table border="1" cellpadding="10" align="center" bgcolor="white">
+                 <tbody>
+                <tr>
+                    <th colspan="10"><b>III/IV B.Tech.SECOND SEMESTER TIME TABLE(A.Y.2023-2024)</b></th>
+                </tr>
+                <tr>
+                    <th colspan="4" class="b"><b>Room No. C-309</b></th>
+                    <th colspan="2"><b>CSE-A </b></th>
+                    <th colspan="4" class="c"><b>with effect from : 18/12/2023</b></th>
+                </tr>
+                <tr>
+
+                    <th>Time/Day</th>
+                    <th>8:40-9:30</th>
+                    <th>9:30-10:20</th>
+                    <th>10:20-11:10</th>
+                    <th>11:10-12:00</th>
+                    <th>12:00-12:50</th>
+                    <th>12:50-1:40</th>
+                    <th>1:40-2:30</th>
+                    <th>2:30-3:20</th>
+                    <th>3:20-4:10</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>NNDL</td>
+                    <td colspan="2">QA</td>
+                    <td>WT</td>
+                    <td rowspan="6">LUNCH BREAK</td>
+                    <td>IRE</td>
+                    <td>OOSE</td>
+                    <td colspan="2">CRT</td>
+                </tr>
+                 <tr>
+                    <td>Tuesday</td>
+                    <td>OOSE</td>
+                    <td colspan="2">VA</td>
+                    <td>ML</td>
+                    <td>NNDL</td>
+                    <td>WT</td>
+                    <td>CNS</td>
+                    <td>IRE</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>CNS</td>
+                    <td>ML</td>
+                    <td>IRE</td>
+                    <td>NNDL</td>
+                    <td colspan="3">WT</td>
+                    <td class="a">LIBRARY</td>
+                </tr> <tr>
+                    <td>Thursday</td>
+                    <td>WT</td>
+                    <td>NNDL</td>
+                    <td>IRE</td>
+                    <td>CNS</td>
+                    <td>ML</td>
+                    <td>OOSE</td>
+                    <td colspan="2" class="a">COUNSELLING</td>
+                </tr> <tr>
+                    <td>Friday</td>
+                    <td>ML</td>
+                    <td colspan="3">OOSE</td>
+                    <td>CNS</td>
+                    <td>OOSE</td>
+                    <td>WT</td>
+                    <td class="a">SPORTS</td>
+                </tr> <tr>
+                    <td>Saturday</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+       
+        <script>
+
+            function f6(){
+                window.parent.frames["login"].document.body.style.backgroundColor="rgba(242, 235, 45, 0.771)";
+                window.parent.frames["registration"].document.body.style.backgroundColor="rgba(242, 235, 45, 0.771)";
+                window.parent.frames["profile"].document.body.style.backgroundColor="rgba(242, 235, 45, 0.771)";
+                document.querySelector('table').style.color="black"; 
+            document.body.style.backgroundColor="navajowhite";
+            document.querySelector('table').style.fontFamily="cursive";
+            window.parent.frames["details"].document.body.style.backgroundColor = "wheat";
+            var rows = document.querySelectorAll('table tr');
+            for (var i = 0; i < rows.length; i++) {
+                if (i % 2 === 0) {
+                    rows[i].style.backgroundColor = "peachpuff";
+                } else {
+                    rows[i].style.backgroundColor = "papayawhip";
+                   
+                }
+            }
+
+            }
+
+            function f7(){
+            window.parent.frames["login"].document.body.style.backgroundColor="rgb(22, 241, 252)";
+            window.parent.frames["registration"].document.body.style.backgroundColor="rgb(22, 241, 252)";
+            window.parent.frames["profile"].document.body.style.backgroundColor="rgb(22, 241, 252)";
+            document.querySelector('table').style.color="black"; 
+            document.body.style.backgroundColor="dodgerblue";
+            document.querySelector('table').style.fontFamily="Arial, Helvetica, sans-serif";
+            window.parent.frames["details"].document.body.style.backgroundColor = "skyblue";
+            var rows = document.querySelectorAll('table tr');
+            for (var i = 0; i < rows.length; i++) {
+                if (i % 2 === 0) {
+                    rows[i].style.backgroundColor = "lightskyblue";
+                } else {
+                    rows[i].style.backgroundColor = "lightblue";
+                   
+                }
+            }
+
+            }
+
+            function f8(){
+                window.parent.frames["login"].document.body.style.backgroundColor="rgba(186, 76, 184, 0.562)";
+                window.parent.frames["registration"].document.body.style.backgroundColor="rgba(186, 76, 184, 0.562)";
+                window.parent.frames["profile"].document.body.style.backgroundColor="rgba(186, 76, 184, 0.562)";
+                document.querySelector('table').style.color="black"; 
+                document.body.style.backgroundColor="orchid";
+                document.querySelector('table').style.fontFamily="cursive";
+    
+                var rows = document.querySelectorAll('table tr');
+                for (var i = 0; i < rows.length; i++) {
+                    if (i % 2 === 0) {
+                        rows[i].style.backgroundColor = "hotpink";
+                    } else {
+                        rows[i].style.backgroundColor = "lightpink";
+                       
+                    }
+                }
+    
+                }
+
+            window.onload= function () {
+                
+                f8();
+
+
+            var rows = document.querySelectorAll('table tr');
+            rows.forEach(function (row) {
+                row.addEventListener('mouseover', function () {
+                colour=this.style.backgroundColor;
+                    this.style.backgroundColor = "aqua";
+
+                row.addEventListener('mouseout', function () {   
+                    this.style.backgroundColor =colour;
+                });
+            });
+        });
+
+        var head = document.querySelectorAll('table th,td');
+
+           
+        head.forEach(function (row) {
+        row.addEventListener('mouseover', function () {
+
+                this.style.backgroundColor = "lightgreen";
+
+        row.addEventListener('mouseout', function () {
+               
+                this.style.backgroundColor = "";
+            });
+        });
+    });
+    }
+
+        </script>
+    </body>
+</html>
+<td colspan="2" class="b"></td>
+<td colspan="3" class="b"></td>
+<td colspan="2" class="b"></td>
+<td colspan="3" class="b"></td><br>

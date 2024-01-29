@@ -1,0 +1,119 @@
+<html>
+<body style="background-color:pink">
+    <button onclick="f6()">theme1</button>
+    <button onclick="f7()">theme2</button>
+    <h3 align="center">CSE</h3>
+    <table style="color:rgb(6, 5, 5)" border="1" cellspacing="1" cellpadding="20"  align="center">
+        <tr>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+            <td>1</td>
+            <td>Ravi</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Tej</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>varun</td>
+            <td>19</td>
+        </tr>
+    </table>
+    <script>
+        var colour;
+
+       
+
+
+        function f6(){ 
+
+            var bgColor = "springgreen"; // Replace with the color you want
+            window.parent.frames["details"].document.body.style.backgroundColor = bgColor;
+            window.parent.frames["login"].document.body.style.backgroundColor="rgba(19, 241, 56, 0.79)";
+            window.parent.frames["registration"].document.body.style.backgroundColor="rgba(19, 241, 56, 0.79)";
+            window.parent.frames["profile"].document.body.style.backgroundColor="rgba(19, 241, 56, 0.79)";
+
+            document.querySelector('table').style.color="black"; 
+            document.body.style.backgroundColor="palegreen";
+            document.querySelector('table').style.fontFamily="cursive";
+           
+            var rows = document.querySelectorAll('table tr');
+            for (var i = 0; i < rows.length; i++) {
+                if (i % 2 === 0) {
+                    rows[i].style.backgroundColor = "limegreen";
+                } else {
+                    rows[i].style.backgroundColor = "springgreen";
+                   
+                }
+            }
+        }
+
+        function f7(){ 
+            window.parent.frames["login"].document.body.style.backgroundColor="rgba(232, 33, 192, 0.563)";
+            window.parent.frames["registration"].document.body.style.backgroundColor="rgba(232, 33, 192, 0.563)";
+            window.parent.frames["profile"].document.body.style.backgroundColor="rgba(232, 33, 192, 0.563)";
+            document.querySelector('table').style.color="black";
+            document.querySelector('table').style.fontFamily="'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"; 
+            document.body.style.backgroundColor="plum";
+
+            var bgColor = "lightpink"; // Replace with the color you want
+            window.parent.frames["details"].document.body.style.backgroundColor = bgColor;
+
+            var rows = document.querySelectorAll('table tr');
+            for (var i = 0; i < rows.length; i++) {
+                if (i % 2 === 0) {
+                    rows[i].style.backgroundColor = "hotpink";
+                } else {
+                    rows[i].style.backgroundColor = "violet";
+                   
+                }
+            }
+        }
+
+
+      
+        
+
+            window.onload= function () {
+
+
+                f7();
+
+
+            var rows = document.querySelectorAll('table tr');
+            rows.forEach(function (row) {
+                row.addEventListener('mouseover', function () {
+                colour=this.style.backgroundColor;
+                    this.style.backgroundColor = "aqua";
+
+                row.addEventListener('mouseout', function () {   
+                    this.style.backgroundColor =colour;
+                });
+            });
+        });
+
+        var head = document.querySelectorAll('table th');
+
+           
+        head.forEach(function (row) {
+        row.addEventListener('mouseover', function () {
+
+                this.style.backgroundColor = "lightgreen";
+
+        row.addEventListener('mouseout', function () {
+               
+                this.style.backgroundColor = "";
+            });
+        });
+    });
+    }
+
+    
+    </script>
+</body>
+</html>

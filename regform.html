@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration-form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body  bgcolor="pink" id="t5"></body>
+<button onclick="f4()">theme1</button>
+<button onclick="f5()">theme2</button>
+<div class="newdiv" id="t1" style="background-color:yellow "> 
+    <form action="display.html" method="POST" id="t2">
+       
+      
+       <label id="la"> <h1 align="center">Registration Form</h1></label> 
+        <label id="la">Personal Data</label>
+    <table align="center">
+        
+        <tr>
+            <td>Name :</td>
+            <td><input type="text" id="na" name="na" required></td> 
+        </tr>
+        <tr>
+            <td>Email :</td>
+            <td><input type="email" id="mail" name="mail" required></td>
+        </tr>
+        <tr>
+            <td>Gender :</td>
+            <td>
+                <input type="radio" name="gen">Male
+                <input type="radio" name="gen">Female
+            </td>
+        </tr>
+        <tr>
+            <td>Language:</td>
+            <td>
+                <input type="checkbox" name="tel1">Telugu
+                <input type="checkbox" name="tel1">English
+                <input type="checkbox" name="tel1">Hindi
+            </td>
+        </tr>
+        <tr>
+            <td>Date of Birth :</td>
+            <td><input type="date" name="da" required></td>
+        </tr>
+        <tr>
+            <td>Mobile No :</td>
+            <td>
+                <input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" name="mob" placeholder="1234-567-890" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Address :</td>
+            <td><input type="text" name="add" placeholder="Enter your address" required></td>
+        </tr>
+    </table>
+    <!--
+        <label id="la">Education</label>
+        <table align="center">
+            <tr>
+                <td>B.Tech :</td>
+                <td><input type="number" name="btech" required></td>
+            </tr>
+            <tr>
+                <td>Inter :</td>
+                <td><input type="number" name="inter" required></td>
+            </tr>
+            <tr>
+                <td>SSC :</td>
+                <td><input type="number" name="ssc" required></td>
+            </tr>
+        </table>
+    -->
+        <input type="submit" name="button">
+    <br>
+    </form>
+</div>
+<script>
+    function f4(){
+        window.parent.frames["login"].document.body.style.backgroundColor="rgba(19, 241, 56, 0.79)";
+        window.parent.frames["registration"].document.body.style.backgroundColor="rgba(19, 241, 56, 0.79)";
+        window.parent.frames["profile"].document.body.style.backgroundColor="rgba(19, 241, 56, 0.79)";
+        window.parent.frames["details"].document.body.style.backgroundColor="lightgreen";
+        document.getElementById('t5').style.color="black";
+        document.body.style.fontFamily="cursive";
+        document.querySelector('div').style.backgroundColor="limegreen";
+        document.body.style.backgroundColor="darkseagreen";
+        
+        
+    }
+
+
+     window.onload= f4();
+
+
+    function f5(){
+        window.parent.frames["login"].document.body.style.backgroundColor="rgba(232, 33, 192, 0.563)";
+        window.parent.frames["registration"].document.body.style.backgroundColor="rgba(232, 33, 192, 0.563)";
+        window.parent.frames["profile"].document.body.style.backgroundColor="rgba(232, 33, 192, 0.563)";
+        window.parent.frames["details"].document.body.style.backgroundColor="lightpink";
+        document.getElementById('t5').style.color="black";
+        document.body.style.fontFamily=" Arial, Helvetica, sans-serif";
+        document.querySelector('div').style.backgroundColor="hotpink";
+        document.body.style.backgroundColor="lightsalmon";
+        
+        
+    }
+</script>
+</body>
+</html>

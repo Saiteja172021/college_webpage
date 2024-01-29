@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+           background-color:greenyellow;
+          
+        }
+        div{
+            float:center;
+            margin-left: 40%;
+            margin-right:10%;
+            width:34%;
+            padding: 2px 2px;
+            background-color:aquamarine;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-structure</title>
+</head>
+<body>
+    <button onclick="t1()">theme1</button>
+    <button onclick="t2()">theme2</button>
+    <div>
+   <ol >
+        <h3><li>AU
+            <ol type="a">
+                <li>ANITS
+                    <ol type="i">
+                        <li>CSE
+                            <ul type="square">
+                                <h5>
+                                <li>seats-180</li>
+                                <li>Placements-100</li>
+                                <li>Male-Female</li>
+                                </h5>
+                            </ul>
+                        </li>
+                        <li>ECE
+                            <ul type="square">
+                                <h5>
+                                <li>seats-840</li>
+                                <li>Placements-80</li>
+                                <li>Male-Female</li>
+                                </h5>
+                            </ul>
+                        </li>
+                    </ol>
+                </li>
+            
+        <li>SANKETIKA
+            <ol type="i">
+                <li>MECH
+                    <ul type="square">
+                        <h5>
+                        <li>sports</li>
+                        <li>strength</li>
+                        </h5>
+                    </ul>
+                </li>
+                <li>CSE</li>
+            </ol>
+            </li>
+        </ol>
+        </li>
+        <li><h3>JNTUK
+           <ol type="I">
+                <li>Placements
+                    <ul type="circle"><h5>
+                        <li>2023</li>
+                        <li>2022</li>
+                        <li>2021</li>
+                        </h5>
+                    </ul>
+                <li>Hostel Fees
+                    <ul type="circle">
+                    <h5>
+                        <li>2023</li>
+                        <li>2022</li>
+                    </h5>
+                    </ul>
+                </li>
+           </ol>
+           </h3>
+        </li>
+        <li><h3>ANU
+            <ul><h5>
+                <dd>Acharya Nagarjuna University</dd>
+                </h5>
+            </ul>
+        </h3>
+        </li>
+        
+    </ol>
+    </div>
+    <script>
+
+        function preventPropagation() {
+            window.event.cancelBubble = true;
+            if (event.stopPropagation) {
+                event.stopPropagation();
+            }
+            }
+            
+            document.onclick = preventPropagation;
+
+
+
+            window.onload= t2();
+
+            
+        function t1(){
+        window.parent.frames["login"].document.body.style.backgroundColor="rgba(10, 8, 8, 0.363)";
+        window.parent.frames["registration"].document.body.style.backgroundColor="rgba(10, 8, 8, 0.363)";
+        window.parent.frames["profile"].document.body.style.backgroundColor="rgba(10, 8, 8, 0.363)";
+        document.querySelector('div').style.backgroundImage="url('loginimg2.jpg')";
+        window.parent.frames["details"].document.body.style.backgroundColor = "rgba(14, 11, 11, 0.688)";
+        document.body.style.color="yellow";
+        document.body.style.fontFamily="cursive";
+        document.body.style.backgroundColor="rgba(11, 9, 9, 0.838)";
+        }
+        function t2(){
+            window.parent.frames["login"].document.body.style.backgroundColor="rgba(243, 231, 7, 0.841)";
+            window.parent.frames["registration"].document.body.style.backgroundColor="rgba(243, 231, 7, 0.841)";
+            window.parent.frames["profile"].document.body.style.backgroundColor="rgba(243, 231, 7, 0.841)";
+            document.querySelector('div').style.backgroundColor="yellow";
+            window.parent.frames["details"].document.body.style.backgroundColor = "gold";
+            document.querySelector('div').style.backgroundImage="none";
+            document.body.style.color="red";
+            document.body.style.fontFamily="cursive";
+            document.body.style.backgroundColor="lightyellow";
+            }
+    </script>
+</body>
+</html>
